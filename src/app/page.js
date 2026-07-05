@@ -299,22 +299,35 @@ export default function Home() {
             </h2>
           </div>
           
-          {/* Dynamic 4-Column Bento Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             
             {/* 1. Cura (Wide Top-Left) */}
-            <div 
-              className="md:col-span-2 lg:col-span-2 bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-lg hover:bg-white/10 transition-all cursor-pointer group"
-              onClick={() => window.open('/cura', '_blank')}
+            <a 
+              href="/cura"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="md:col-span-2 lg:col-span-2 bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-lg hover:bg-white/10 transition-all cursor-pointer group block"
             >
               <div className="w-full h-40 bg-gradient-to-br from-blue-900/40 to-purple-900/40 rounded-xl mb-4 flex items-center justify-center border border-white/5 group-hover:border-purple-500/50 transition-colors">
                 <span className="font-bold tracking-widest text-sm text-blue-200">CURA</span>
               </div>
               <h4 className="font-bold text-base text-gray-100">Healthcare System</h4>
               <p className="text-sm text-gray-400 mt-1">React, AWS Cognito</p>
+            </a>
+
+            {/* 2. TerraScope (Wide Top-Right) */}
+            <div 
+              className="md:col-span-2 lg:col-span-2 bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-lg hover:bg-white/10 transition-all cursor-pointer group"
+              onClick={() => window.open('https://github.com/Sam-Manoj/TerraScope', '_blank')}
+            >
+              <div className="w-full h-40 bg-gradient-to-br from-green-900/40 to-emerald-900/40 rounded-xl mb-4 flex items-center justify-center border border-white/5 group-hover:border-emerald-500/50 transition-colors">
+                <span className="font-bold tracking-widest text-sm text-green-200">TERRASCOPE</span>
+              </div>
+              <h4 className="font-bold text-base text-gray-100">PlantCare Analysis</h4>
+              <p className="text-sm text-gray-400 mt-1">React, Next.js, FastAPI, Python</p>
             </div>
 
-            {/* 2. Mal-Login Detection (Standard) */}
+            {/* 3. Mal-Login Detection */}
             <div 
               className="col-span-1 bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-lg hover:bg-white/10 transition-all cursor-pointer group"
               onClick={() => window.open('https://github.com/Sam-Manoj/mal-login-detection-system', '_blank')}
@@ -326,7 +339,7 @@ export default function Home() {
               <p className="text-sm text-gray-400 mt-1">Python, Machine Learning</p>
             </div>
            
-            {/* 3. Parking Lot Monitoring System (Standard) */}
+            {/* 4. Parking Lot Monitoring System */}
             <div 
               className="col-span-1 bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-lg hover:bg-white/10 transition-all cursor-pointer group"
               onClick={() => window.open('https://github.com/Sam-Manoj/Parking-Lot-Monitoring-System', '_blank')}
@@ -338,7 +351,7 @@ export default function Home() {
               <p className="text-sm text-gray-400 mt-1">C, Arduino</p>
             </div>
 
-            {/* 4. Market Share Predictor (Standard) */}
+            {/* 5. Market Share Predictor */}
             <div 
               className="col-span-1 bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-lg hover:bg-white/10 transition-all cursor-pointer group"
               onClick={() => window.open('https://github.com/Sam-Manoj/Market-Share-Predictor-Markov-Chains-', '_blank')}
@@ -350,7 +363,7 @@ export default function Home() {
               <p className="text-sm text-gray-400 mt-1">Python, Markov Chains</p>
             </div>
 
-            {/* 5. Customer Purchase Behavior Analysis (Standard) */}
+            {/* 6. Purchase Behavior Analysis */}
             <div 
               className="col-span-1 bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-lg hover:bg-white/10 transition-all cursor-pointer group"
               onClick={() => window.open('https://github.com/Sam-Manoj/CustomerPurchaseBehaviorCalculator', '_blank')}
@@ -360,18 +373,6 @@ export default function Home() {
               </div>
               <h4 className="font-bold text-base text-gray-100">Behavior Analysis</h4>
               <p className="text-sm text-gray-400 mt-1">Python, HMM</p>
-            </div>
-
-            {/* 6. Boolean Math Game (Wide Bottom-Right Anchor) */}
-            <div 
-              className="md:col-span-2 lg:col-span-2 bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-lg hover:bg-white/10 transition-all cursor-pointer group"
-              onClick={() => window.open('https://github.com/Sam-Manoj/Boolean-Math-Game', '_blank')}
-            >
-              <div className="w-full h-40 bg-gradient-to-br from-cyan-900/40 to-sky-900/40 rounded-xl mb-4 flex items-center justify-center border border-white/5 group-hover:border-cyan-500/50 transition-colors">
-                 <span className="font-bold tracking-widest text-sm md:text-xl text-cyan-200 text-center px-4 leading-relaxed">BOOLEAN MATH GAME</span>
-              </div>
-              <h4 className="font-bold text-base text-gray-100">Logic Puzzle Interface</h4>
-              <p className="text-sm text-gray-400 mt-1">Java, JavaFX</p>
             </div>
 
           </div>
