@@ -318,7 +318,7 @@ export default function Home() {
             {/* 2. TerraScope (Wide Top-Right) */}
             <div 
               className="md:col-span-2 lg:col-span-2 bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-lg hover:bg-white/10 transition-all cursor-pointer group"
-              onClick={() => window.open('https://github.com/Sam-Manoj/TerraScope', '_blank')}
+              onClick={() => window.open('https://terrascope-frontend.vercel.app', '_blank')}
             >
               <div className="w-full h-40 bg-gradient-to-br from-green-900/40 to-emerald-900/40 rounded-xl mb-4 flex items-center justify-center border border-white/5 group-hover:border-emerald-500/50 transition-colors">
                 <span className="font-bold tracking-widest text-sm text-green-200">TERRASCOPE</span>
