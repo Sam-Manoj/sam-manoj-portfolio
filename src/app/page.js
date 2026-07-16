@@ -42,7 +42,7 @@ export default function Home() {
 
         {/* Desktop: Social Icons */}
         <div className="hidden md:flex space-x-6 text-xl">
-          <a href="https://github.com" target="_blank" rel="noreferrer"><BsGithub className="cursor-pointer hover:text-purple-400 transition-colors" /></a>
+          <a href="https://github.com/Sam-Manoj" target="_blank" rel="noreferrer"><BsGithub className="cursor-pointer hover:text-purple-400 transition-colors" /></a>
           <a href="https://linkedin.com/in/sam-manoj" target="_blank" rel="noreferrer"><BsLinkedin className="cursor-pointer hover:text-purple-400 transition-colors" /></a>
         </div>
 
