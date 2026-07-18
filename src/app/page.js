@@ -94,11 +94,16 @@ export default function Home() {
 
             <div className="mt-10 flex items-center space-x-8">
               <span className="text-sm font-semibold tracking-wider hidden sm:block">Get Started</span>
-              <button className="flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-fuchsia-600 px-6 py-3 md:py-2 rounded-full font-medium hover:scale-105 transition-transform shadow-[0_0_20px_rgba(192,38,211,0.4)]">
+              <a 
+                href="/Sam%20Manoj.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-fuchsia-600 px-6 py-3 md:py-2 rounded-full font-medium hover:scale-105 transition-transform shadow-[0_0_20px_rgba(192,38,211,0.4)]"
+              >
                 <span>View Resume</span>
                 <BsArrowRight />
-              </button>
-            </div>
+              </a>
+              </div>
           </div>
 
           <div className="lg:w-1/2 relative mt-16 lg:mt-0 flex justify-center items-center">
